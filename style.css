@@ -103,9 +103,9 @@ a {
 .navbar-toggler.collapsed .toggler-icon {
   background: linear-gradient(
     263deg,
-    white 0,
-    rgba(252, 74, 74, 1) 20%,
-    rgb(0, 195, 255) 100%
+    #023047 0,
+    /* #3a5a40 20%, */
+    #219ebc 100%
   );
 }
 .logo {
@@ -119,10 +119,20 @@ a {
   width: 100%;
 }
 
+/* 
+
+ mostly repeated syles
+
+ */
+
 .main-container {
   margin: 4rem 0 0 0;
   padding: 1rem 0;
   /* background-color: red; */
+}
+
+p {
+    text-align: center;
 }
 .main-btn {
     background-color: var(--main-color);
@@ -157,10 +167,17 @@ a {
     opacity: 1;
     transition: 0s
   }
+
+/*   
+
+hero section
+
+   */
 .hero-container {
   height: 100dvh;
   /* background-color: yellow; */
   background-image: url("./images/students.jpg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -178,6 +195,30 @@ a {
   width: 50%;
 }
 
+
+
+
+/* 
+
+section-1
+
+ */
+
+
+.section-1 {
+    height: 20dvh;
+}
+.section-1 p {
+    color: black;
+}
+
+.section-1 button{
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (min-width: 1000px) {
   .main-container {
     margin: 3rem 0 0 0;
