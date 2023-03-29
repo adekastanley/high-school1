@@ -1,137 +1,214 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  /* body {
-  } */
-  .navbar-toggler {
-    width: 20px;
-    height: 20px;
-    position: relative;
-    transition: 0.5s ease-in-out;
-  }
-  
-  .navbar-toggler,
-  .navbar-toggler:focus,
-  .navbar-toggler:active,
-  .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
-    border: 0;
-    position: relative;
-  }
-  
-  .navbar-toggler span {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .toggler-icon {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #d3531a;
-    border-radius: 1px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: 0.25s ease-in-out;
-  }
-  
-  .middle-bar {
-    margin-top: 0px;
-  }
-  
-  /* State when the navbar is collapsed */
-  
-  .navbar-toggler.collapsed .top-bar {
-    position: absolute;
-    top: 0px;
-    transform: rotate(0deg);
-  }
-  
-  .navbar-toggler.collapsed .middle-bar {
-    opacity: 1;
-    position: absolute;
-    top: 10px;
-    filter: alpha(opacity=100);
-  }
-  
-  .navbar-toggler.collapsed .bottom-bar {
-    position: absolute;
-    top: 20px;
-    transform: rotate(0deg);
-  }
-  
-  /* when navigation is clicked */
-  
-  .navbar-toggler .top-bar {
-    top: inherit;
-    transform: rotate(135deg);
-  }
-  
-  .navbar-toggler .middle-bar {
-    opacity: 0;
-    top: inherit;
-    filter: alpha(opacity=0);
-  }
-  
-  .navbar-toggler .bottom-bar {
-    top: inherit;
-    transform: rotate(-135deg);
-  }
-  
-  /* Color of 3 lines */
-  
-  .navbar-toggler.collapsed .toggler-icon {
-    background: linear-gradient(
-      263deg,
-      white 0,
-      rgba(252, 74, 74, 1) 20%,
-      rgb(0, 195, 255) 100%
-    );
-  }
-  .logo {
-    /* width: 20%; */
-    position: absolute;
-    top: 1.2rem;
-  }
-  
-  .navigation,
-  .top-section {
-    width: 100%;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+:root {
+    --main-color : #264653;
+    --primary-color : #2a9d8f
+}
+
+/* body {
+  } */
+h1,
+p,
+li,
+a {
+    color: white;
+}
+  header {
+    background-color: var(--main-color);
+  }
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  position: relative;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+  position: absolute;
+  top: 0px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  position: absolute;
+  top: 20px;
+  transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+  top: inherit;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  top: inherit;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  top: inherit;
+  transform: rotate(-135deg);
+}
+
+/* Color of 3 lines */
+
+.navbar-toggler.collapsed .toggler-icon {
+  background: linear-gradient(
+    263deg,
+    white 0,
+    rgba(252, 74, 74, 1) 20%,
+    rgb(0, 195, 255) 100%
+  );
+}
+.logo {
+  /* width: 20%; */
+  position: absolute;
+  top: 1.2rem;
+}
+
+.navigation,
+.top-section {
+  width: 100%;
+}
 
 .main-container {
-
-    margin: 4rem 0 0 0;
-    padding: 1rem 0 ;
-    /* background-color: red; */
-    
+  margin: 4rem 0 0 0;
+  padding: 1rem 0;
+  /* background-color: red; */
 }
-.hero-container {
-    height: 90dvh;
-    /* background-color: yellow; */
-    background-image: url('./images/students.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-
+.main-btn {
+    background-color: var(--main-color);
+    position: relative;
+    border: none;
+  
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
 }
-
-
-  @media screen and (min-width: 1000px){
-      .main-container {
-          margin: 3rem 0 0 0;
-          padding: 2.5rem 0;
-          /* background-color: red; */
-        }
-        .hero-container {
-            background-size: cover;
-        
-        }
-
+.main-btn:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
   }
+  
+  .main-btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+.hero-container {
+  height: 100dvh;
+  /* background-color: yellow; */
+  background-image: url("./images/students.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  /* left: 5%; */
+}
+.hero-content-div {
+  width: 90%;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 40%;
+  padding: 2rem;
+}
+.hero-content-div button {
+  width: 50%;
+}
+
+@media screen and (min-width: 1000px) {
+  .main-container {
+    margin: 3rem 0 0 0;
+    padding: 2.5rem 0;
+    /* background-color: red; */
+  }
+  /* .hero-container {
+            background-size: cover;
+           background-position:0 0;
+        
+        } */
+  .hero-container {
+    height: 90dvh;
+
+    background-image: url("./images/students.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    position: relative;
+  }
+
+  .hero-content-div {
+    width: 40%;
+
+    height: 40vh;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+  }
+  .hero-content-div button{
+    width: 30%;
+}
+
+}
